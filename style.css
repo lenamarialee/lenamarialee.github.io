@@ -29,6 +29,7 @@
 h1 {
 	color: #9E3C0E;
 	font-family: 'Roboto', 'sans-serif';
+	margin: 0;
 }
 h3 {
 	color: #9E3C0E;
@@ -40,25 +41,32 @@ h3 {
 	color: gray;
 	opacity: 0.6;
 }
+
 .main-event {
 		text-align: center;
 		color: #A18167;
 		font-family: 'Roboto', 'sans-serif';
 		font-weight: 300;
 }
+
 .address {
 	margin-top: 12px;
 }
+
 .side-events {
 	font-size: 14px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	text-align: center;
 	opacity: 0.9;
-	line-height: 1.5px;
 	color: #A18167;
 	width: 200px;
+	line-height: 4px;
 }
+
+.address-side-events {
+}
+
 .container {
 	display: flex;
 	justify-content: space-around;
@@ -69,9 +77,31 @@ h3 {
 	width: 100%;
 }
 
-.verticalline {
-	border-left: thin;
+.separator {
+	/*border-left: thin;*/
+	background-color: #f7e7ce;
 	opacity: 0.7;
+	height:  100px;
+	width: 3px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .container {
+  	flex-direction: column;
+  }
+  .separator {
+  	height: 2px;
+  	width: 100px;
+  }
+  .main-event {
+  	margin-bottom: 24px;
+  	margin-top: 24px;
+  }
+  .side-events {
+  	margin-top: 24px;
+  	margin-bottom: 24px;
+  }
 }
 
 elemnt selector
